@@ -1,0 +1,1786 @@
+-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input2(b), .output(internal_net_0), .input1(a), );
+
+PrimMux internal_inst_3(.en(en), .output(internal_net_2), .input_1(di), .input_0(internal_net_0), );
+
+PrimBuffer internal_inst_5(.input(internal_net_4), .output(do), );
+
+PrimLatch tmp(.q(internal_net_4), .d(internal_net_2), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.output(internal_net_0), .input2(b), .input1(a), );
+
+PrimMux internal_inst_3(.output(internal_net_2), .en(en), .input_1(di), .input_0(internal_net_0), );
+
+PrimBuffer internal_inst_5(.output(do), .input(internal_net_4), );
+
+PrimLatch tmp(.d(internal_net_2), .q(internal_net_4), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input1(a), .output(internal_net_0), .input2(b), );
+
+PrimMux internal_inst_3(.en(en), .input_1(di), .output(internal_net_2), .input_0(internal_net_0), );
+
+PrimBuffer internal_inst_5(.output(do), .input(internal_net_4), );
+
+PrimLatch tmp(.d(internal_net_2), .q(internal_net_4), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.output(internal_net_0), .input2(b), .input1(a), );
+
+PrimMux internal_inst_3(.input_1(di), .en(en), .input_0(internal_net_0), .output(internal_net_2), );
+
+PrimBuffer internal_inst_5(.input(internal_net_4), .output(do), );
+
+PrimLatch tmp(.q(internal_net_4), .d(internal_net_2), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.output(internal_net_0), .input1(a), .input2(b), );
+
+PrimMux internal_inst_3(.en(en), .output(internal_net_2), .input_0(internal_net_0), .input_1(di), );
+
+PrimBuffer internal_inst_5(.input(internal_net_4), .output(do), );
+
+PrimLatch tmp(.d(internal_net_2), .q(internal_net_4), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input1(a), .output(internal_net_0), .input2(b), );
+
+PrimMux internal_inst_3(.input_1(di), .input_0(internal_net_0), .en(en), .output(internal_net_2), );
+
+PrimBuffer internal_inst_5(.input(internal_net_4), .output(do), );
+
+PrimLatch tmp(.d(internal_net_2), .q(internal_net_4), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.output(internal_net_0), .input1(a), .input2(b), );
+
+PrimMux internal_inst_3(.input_0(internal_net_0), .output(internal_net_2), .en(en), .input_1(di), );
+
+PrimBuffer internal_inst_5(.output(do), .input(internal_net_4), );
+
+PrimLatch tmp(.q(internal_net_4), .d(internal_net_2), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input2(b), .output(internal_net_0), .input1(a), );
+
+PrimMux internal_inst_3(.input_0(internal_net_0), .en(en), .output(internal_net_2), .input_1(di), );
+
+PrimBuffer internal_inst_5(.input(internal_net_4), .output(do), );
+
+PrimLatch tmp(.q(internal_net_4), .d(internal_net_2), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input2(b), .output(internal_net_0), .input1(a), );
+
+PrimMux internal_inst_3(.en(en), .input_1(di), .input_0(internal_net_0), .output(internal_net_2), );
+
+PrimBuffer internal_inst_5(.output(do), .input(internal_net_4), );
+
+PrimLatch tmp(.q(internal_net_4), .d(internal_net_2), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input1(a), .output(internal_net_0), .input2(b), );
+
+PrimMux internal_inst_3(.output(internal_net_2), .input_1(di), .en(en), .input_0(internal_net_0), );
+
+PrimBuffer internal_inst_5(.input(internal_net_4), .output(do), );
+
+PrimLatch tmp(.d(internal_net_2), .q(internal_net_4), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.output(internal_net_0), .input2(b), .input1(a), );
+
+PrimMux internal_inst_3(.en(en), .input_1(di), .output(internal_net_2), .input_0(internal_net_0), );
+
+PrimBuffer internal_inst_5(.input(internal_net_4), .output(do), );
+
+PrimLatch tmp(.d(internal_net_2), .q(internal_net_4), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input2(b), .output(internal_net_0), .input1(a), );
+
+PrimMux internal_inst_3(.input_1(di), .input_0(internal_net_0), .en(en), .output(internal_net_2), );
+
+PrimBuffer internal_inst_5(.input(internal_net_4), .output(do), );
+
+PrimLatch tmp(.d(internal_net_2), .q(internal_net_4), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.output(internal_net_0), .input1(a), .input2(b), );
+
+PrimMux internal_inst_3(.en(en), .output(internal_net_2), .input_0(internal_net_0), .input_1(di), );
+
+PrimBuffer internal_inst_5(.input(internal_net_4), .output(do), );
+
+PrimLatch tmp(.q(internal_net_4), .d(internal_net_2), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input2(b), .input1(a), .output(internal_net_0), );
+
+PrimMux internal_inst_3(.input_1(di), .input_0(internal_net_0), .en(en), .output(internal_net_2), );
+
+PrimBuffer internal_inst_5(.input(internal_net_4), .output(do), );
+
+PrimLatch tmp(.d(internal_net_2), .q(internal_net_4), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.output(internal_net_0), .input1(a), .input2(b), );
+
+PrimMux internal_inst_3(.input_0(internal_net_0), .input_1(di), .en(en), .output(internal_net_2), );
+
+PrimBuffer internal_inst_5(.output(do), .input(internal_net_4), );
+
+PrimLatch tmp(.q(internal_net_4), .d(internal_net_2), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input1(a), .input2(b), .output(internal_net_0), );
+
+PrimMux internal_inst_3(.output(internal_net_2), .en(en), .input_1(di), .input_0(internal_net_0), );
+
+PrimBuffer internal_inst_5(.output(do), .input(internal_net_4), );
+
+PrimLatch tmp(.q(internal_net_4), .d(internal_net_2), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input1(a), .input2(b), .output(internal_net_0), );
+
+PrimMux internal_inst_3(.input_0(internal_net_0), .en(en), .input_1(di), .output(internal_net_2), );
+
+PrimBuffer internal_inst_5(.input(internal_net_4), .output(do), );
+
+PrimLatch tmp(.q(internal_net_4), .d(internal_net_2), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input1(a), .input2(b), .output(internal_net_0), );
+
+PrimMux internal_inst_3(.en(en), .output(internal_net_2), .input_0(internal_net_0), .input_1(di), );
+
+PrimBuffer internal_inst_5(.output(do), .input(internal_net_4), );
+
+PrimLatch tmp(.d(internal_net_2), .q(internal_net_4), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input1(a), .output(internal_net_0), .input2(b), );
+
+PrimMux internal_inst_3(.input_1(di), .input_0(internal_net_0), .output(internal_net_2), .en(en), );
+
+PrimBuffer internal_inst_5(.input(internal_net_4), .output(do), );
+
+PrimLatch tmp(.q(internal_net_4), .d(internal_net_2), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.output(internal_net_0), .input2(b), .input1(a), );
+
+PrimMux internal_inst_3(.input_1(di), .output(internal_net_2), .en(en), .input_0(internal_net_0), );
+
+PrimBuffer internal_inst_5(.output(do), .input(internal_net_4), );
+
+PrimLatch tmp(.q(internal_net_4), .d(internal_net_2), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.output(internal_net_0), .input1(a), .input2(b), );
+
+PrimMux internal_inst_3(.input_0(internal_net_0), .output(internal_net_2), .en(en), .input_1(di), );
+
+PrimBuffer internal_inst_5(.input(internal_net_4), .output(do), );
+
+PrimLatch tmp(.d(internal_net_2), .q(internal_net_4), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.output(internal_net_0), .input2(b), .input1(a), );
+
+PrimMux internal_inst_3(.input_0(internal_net_0), .input_1(di), .en(en), .output(internal_net_2), );
+
+PrimBuffer internal_inst_5(.output(do), .input(internal_net_4), );
+
+PrimLatch tmp(.d(internal_net_2), .q(internal_net_4), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.output(internal_net_0), .input1(a), .input2(b), );
+
+PrimMux internal_inst_3(.output(internal_net_2), .en(en), .input_1(di), .input_0(internal_net_0), );
+
+PrimBuffer internal_inst_5(.input(internal_net_4), .output(do), );
+
+PrimLatch tmp(.d(internal_net_2), .q(internal_net_4), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input1(a), .input2(b), .output(internal_net_0), );
+
+PrimMux internal_inst_3(.output(internal_net_2), .en(en), .input_1(di), .input_0(internal_net_0), );
+
+PrimBuffer internal_inst_5(.output(do), .input(internal_net_4), );
+
+PrimLatch tmp(.d(internal_net_2), .q(internal_net_4), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.output(internal_net_0), .input1(a), .input2(b), );
+
+PrimMux internal_inst_3(.input_1(di), .input_0(internal_net_0), .en(en), .output(internal_net_2), );
+
+PrimBuffer internal_inst_5(.input(internal_net_4), .output(do), );
+
+PrimLatch tmp(.d(internal_net_2), .q(internal_net_4), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input2(b), .input1(a), .output(internal_net_0), );
+
+PrimMux internal_inst_3(.input_1(di), .input_0(internal_net_0), .en(en), .output(internal_net_2), );
+
+PrimBuffer internal_inst_5(.output(do), .input(internal_net_4), );
+
+PrimLatch tmp(.q(internal_net_4), .d(internal_net_2), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input1(a), .output(internal_net_0), .input2(b), );
+
+PrimMux internal_inst_3(.en(en), .output(internal_net_2), .input_1(di), .input_0(internal_net_0), );
+
+PrimBuffer internal_inst_5(.input(internal_net_4), .output(do), );
+
+PrimLatch tmp(.q(internal_net_4), .d(internal_net_2), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input1(a), .input2(b), .output(internal_net_0), );
+
+PrimMux internal_inst_3(.en(en), .output(internal_net_2), .input_1(di), .input_0(internal_net_0), );
+
+PrimBuffer internal_inst_5(.input(internal_net_4), .output(do), );
+
+PrimLatch tmp(.d(internal_net_2), .q(internal_net_4), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input2(b), .output(internal_net_0), .input1(a), );
+
+PrimMux internal_inst_3(.output(internal_net_2), .input_1(di), .input_0(internal_net_0), .en(en), );
+
+PrimBuffer internal_inst_5(.input(internal_net_4), .output(do), );
+
+PrimLatch tmp(.d(internal_net_2), .q(internal_net_4), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.output(internal_net_0), .input2(b), .input1(a), );
+
+PrimMux internal_inst_3(.input_1(di), .en(en), .input_0(internal_net_0), .output(internal_net_2), );
+
+PrimBuffer internal_inst_5(.output(do), .input(internal_net_4), );
+
+PrimLatch tmp(.q(internal_net_4), .d(internal_net_2), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_10;
+wire internal_net_6;
+wire internal_net_8;
+wire w;
+
+
+PrimBuffer internal_inst_11(.output(do), .input(internal_net_10), );
+
+PrimAdder internal_inst_7(.input1(a), .input2(b), .output(internal_net_6), );
+
+PrimMux internal_inst_9(.output(internal_net_8), .en(en), .input_1(di), .input_0(internal_net_6), );
+
+PrimLatch tmp(.q(internal_net_10), .d(internal_net_8), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_10;
+wire internal_net_6;
+wire internal_net_8;
+wire w;
+
+
+PrimBuffer internal_inst_11(.input(internal_net_10), .output(do), );
+
+PrimAdder internal_inst_7(.output(internal_net_6), .input1(a), .input2(b), );
+
+PrimMux internal_inst_9(.input_0(internal_net_6), .input_1(di), .output(internal_net_8), .en(en), );
+
+PrimLatch tmp(.d(internal_net_8), .q(internal_net_10), );
+
+
+endModule-------------------------------------------Parse Tree				-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist				 --------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_10;
+wire internal_net_6;
+wire internal_net_8;
+wire w;
+
+
+PrimBuffer internal_inst_11(.output(do), .input(internal_net_10), );
+
+PrimAdder internal_inst_7(.output(internal_net_6), .input2(b), .input1(a), );
+
+PrimMux internal_inst_9(.en(en), .output(internal_net_8), .input_1(di), .input_0(internal_net_6), );
+
+PrimLatch tmp(.d(internal_net_8), .q(internal_net_10), );
+
+
+endModule----------------------Parse Tree------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist--------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input2(b), .output(internal_net_0), .input1(a), );
+
+PrimMux internal_inst_3(.output(internal_net_2), .input_0(internal_net_0), .en(en), .input_1(di), );
+
+PrimBuffer internal_inst_5(.output(do), .input(internal_net_4), );
+
+PrimLatch tmp(.q(internal_net_4), .d(internal_net_2), );
+
+
+endModule-------------------------------------------Parse Tree-------------------------------------------
+Library: D:\MyProjects\compiler\CplWithGui\CplWIthGUI\src\test\test.v
+	Module: test
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Definition
+		Statement: Always
+			Statement: IF
+				Expression: Condition
+					IdRef£ºen
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: Expression
+						IdRef£ºdi
+				Statement: Assign
+					Expression: Expression
+						IdRef£ºtmp
+					Expression: ADD
+						IdRef£ºa
+						IdRef£ºb
+		Statement: Assign
+			Expression: Expression
+				IdRef£ºdo
+			Expression: Expression
+				IdRef£ºtmp
+--------------------------------------------Netlist--------------------------------------------
+module test ( a b di do en);
+
+
+wire a;
+wire b;
+wire di;
+wire do;
+wire en;
+wire internal_net_0;
+wire internal_net_2;
+wire internal_net_4;
+wire w;
+
+
+PrimAdder internal_inst_1(.input2(b), .input1(a), .output(internal_net_0), );
+
+PrimMux internal_inst_3(.output(internal_net_2), .en(en), .input_1(di), .input_0(internal_net_0), );
+
+PrimBuffer internal_inst_5(.output(do), .input(internal_net_4), );
+
+PrimLatch tmp(.d(internal_net_2), .q(internal_net_4), );
+
+
+endModule
